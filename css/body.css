@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/backgound1.png");
+  background-size: auto 100vh;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+
+a {
+  color: rgb(136, 25, 170);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.site-subtitle,
+.site-title {
+  color:#77315f;
+  text-align: center;
+}
+
+.site-title{
+  font-size: 4em;
+  font-family: 'Architects Daughter', cursive;
+}
+
+.site-subtitle{
+  font-style: italic;
+  font-family: 'Mali', cursive;
+}
+
+.fotos {
+  padding: 2em;
+  height: 100vh;
+}
+
+.fotos h2{
+  font-family: 'Mali', cursive;
+  color:rgb(133, 58, 156);
+  margin-bottom: 1.7em;
+  font-size: 2.2em;
+  text-align: center;
+}
+
+.fotos .grid {
+  display: grid;
+  gap: 2.3em;
+}
+
+@media (min-width: 560px) {
+  .fotos .grid {
+    grid-template-columns: repeat(2, 240px);
+    /*align-content: center;*/
+    justify-content: center ;
+  }
+}
+
+@media (min-width: 880px) {
+  .fotos .grid {
+    grid-template-columns: repeat(3, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 4.6em - 48px - 2.2em);
+  }
+}
+
+.fotos figure {
+  text-align: center;
+}
+
+.img-fotos {
+  width: 240px;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/*@media (min-width: 1200px){
+  .img-fotos {
+    width: 10em;
+    height: auto;
+  }
+}*/
